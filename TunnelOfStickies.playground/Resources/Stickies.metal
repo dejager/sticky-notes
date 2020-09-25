@@ -3,18 +3,8 @@ using namespace metal;
 
 #define pi 3.141592653589793
 
-float distance(float3 p) {
-  p = sin(p);
-  p -= 0.5;
-  return length(p) - 0.4;
-}
-
 float random(float2 st) {
   return fract(sin(dot(st.xy, float2(12.9898, 78.233))) * 43758.5453123);
-}
-
-float between(float minV, float maxV, float v) {
-  return minV + v * (maxV - minV);
 }
 
 kernel void youMustBeSoOrganized(texture2d<float, access::write> o[[texture(0)]],
