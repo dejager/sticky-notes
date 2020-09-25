@@ -1,2 +1,2 @@
-# flythrough
-A Metal shader inspired by some of Apple's recent tunnel animations
+# sticky-notes
+An Xcode Metal shader playground inspired by those tiny, helpful pieces of paper...
